@@ -1,0 +1,16 @@
+services:
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack-main
+    ports:
+      - "4566:4566"
+      - "127.0.0.1:4510-4559:4510-4559"  # external services port range
+    environment:
+      - SERVICES=s3,ec2,lambda # Add any other services you need
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+    volumes:
+      - "./localstack:/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+
