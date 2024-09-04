@@ -1,5 +1,11 @@
 # localstack
 
+**Run Locally, Deploy Globally**
+Develop and test your AWS applications locally to reduce development time and increase product velocity. Reduce unnecessary AWS spend and remove the complexity and risk of maintaining AWS dev accounts.
+This repository is preconfigured using the open-source community edition of localstack. There is also a paid verison that includes a ui and access to additonal aws services such as ecs. to learn more about what local stack does, head to  https://www.localstack.cloud/
+
+if you're ready to get started, see below:
+
 ## 1. Install Docker
 
 LocalStack runs as a Docker container, so you need Docker installed on your system.
